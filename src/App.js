@@ -18,9 +18,11 @@ function App() {
   const handleSubmit=(e)=>{
      e.preventDefault();
      axios.defaults.withCredentials = true;
-     axios.get('http://crud_laravel_app.com/sanctum/csrf-cookie').then(response => {
-      axios.post('http://crud_laravel_app.com:8000/api/login',state).then(res => {
+     axios.get('https://crud-laravel-app.fly.dev/sanctum/csrf-cookie').then(response => {
       
+      axios.post('https://crud-laravel-app.fly.dev/api/login',state).then(res => {
+      
+     
   });
  
   });
